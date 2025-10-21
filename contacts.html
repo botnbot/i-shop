@@ -1,10 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Категории</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
-
+<div class="container-fluid">
+    <div class="row min-vh-100">
+        <!-- Боковое меню -->
+        <div class="col-2 d-flex flex-column bg-dark text-white py-3">
+            <h3>Меню</h3>
+            <ul class="list-group mb-4">
+                <li class="list-group-item bg-dark border-0 p-2">
+                    <a class="text-white text-decoration-none" href="catalog.html">Каталог</a>
+                </li>
+                <li class="list-group-item bg-dark border-0 p-2">
+                    <a class="text-white text-decoration-none" href="category1.html">Категории</a>
+                </li>
+                <li class="list-group-item bg-dark border-0 p-2">
+                    <a class="text-white text-decoration-none" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <div class="dropup mt-auto px-2">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    Пользователь
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="userMenuButton"
+                    style="max-height: 200px; overflow-y: auto;">
+                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Основной контент -->
+        <div class="col-10 text-center mt-3">
+            <h2>Контакты</h2>
+            <div class="row g-5 mt-3 text-start">
+                <div class="col-1">
+                </div>
+                <!-- Форма -->
+                <div class="col-5 border p-5">
+                    <div>
+                        <label for="Name" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Почта</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                </div>
+                <!-- Текст -->
+                <div class="col-6">
+                    <h3>Наши контакты</h3>
+                    <p class="mb-3" style="text-align: justify;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p> While this feedback cannot be styled with CSS, you can still customize the feedback text through
+                        JavaScript.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Подключение Bootstrap JS -->
+<script src="static/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
